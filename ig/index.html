@@ -1,15 +1,128 @@
-<HEAD>
-<SCRIPT LANGUAGE="Javascript">
+<!DOCTYPE HTML>
 <!--
-var Words ="%3C%21DOCTYPE%20HTML%3E%0A%3C%21--%0A%09Identity%20by%20HTML5%20UP%0A%09html5up.net%20%7C%20@ajlkn%0A%09Free%20for%20personal%20and%20commercial%20use%20under%20the%20CCA%203.0%20license%20%28html5up.net/license%29%0A--%3E%0A%3Chtml%3E%0A%09%3Chead%3E%0A%09%09%3C%21-------JavaScript%u96A8%u6A5F%u986F%u793A%u6587%u5B57%20START--------%3E%0A%3Cscript%20language%3D%22JavaScript%22%3E%0A%3C%21--%0A%0Atip%20%3D%20new%20Array%2824%29%3B%20//%u8A2D%u5B9A%u96A8%u6A5F%u986F%u793A%u6587%u5B57%u6578%0Atip%5B0%5D%20%3D%20%22%u5FAE%u7B11%uFF0C%u662F%u6700%u7F8E%u7684%u967D%u5149%u3002%22%3B%0Atip%5B1%5D%20%3D%20%22%u5B78%u6703%u77E5%u800C%u4E0D%u8A00%uFF0C%u56E0%u70BA%u8A00%u591A%u5FC5%u5931%u3002%22%3B%0Atip%5B2%5D%20%3D%20%22%u5F88%u591A%u6642%u5019%uFF0C%u5BE7%u9858%u88AB%u8AA4%u89E3%uFF0C%u4E5F%u4E0D%u9858%u53BB%u89E3%u91CB%u3002%22%3B%0Atip%5B3%5D%20%3D%20%22%u6B72%u6708%u4E0D%u9577%uFF0C%u5C0D%u6EAB%u67D4%u7684%u4EBA%u5831%u4EE5%u6EAB%u67D4%u3002%22%3B%0Atip%5B4%5D%20%3D%20%22%u4EBA%u7684%u751F%u547D%u4E0D%u5728%u65BC%u9577%u77ED%uFF0C%u5728%u65BC%u662F%u5426%u75DB%u5FEB%u6D3B%u904E%u3002%22%3B%0Atip%5B5%5D%20%3D%20%22%u6C38%u9060%u4E0D%u8981%u505C%u6B62%u76F8%u4FE1%u81EA%u5DF1%u3002%22%3B%0Atip%5B6%5D%20%3D%20%22%u8981%u770B%u6E05%u81EA%u5DF1%uFF0C%u4E0D%u8981%u770B%u8F15%u81EA%u5DF1%u3002%22%3B%0Atip%5B7%5D%20%3D%20%22%u5E73%u51E1%u7C21%u55AE%uFF0C%u5B89%u65BC%u5E73%u51E1%uFF0C%u771F%u4E0D%u7C21%u55AE%u3002%22%3B%0Atip%5B8%5D%20%3D%20%22%u751F%u547D%u4E0D%u6B62%uFF0C%u596E%u9B25%u4E0D%u606F%u3002%22%3B%0Atip%5B9%5D%20%3D%20%22%u5145%u5BE6%u4ECA%u671D%uFF0C%u6628%u65E5%u5DF2%u6210%u904E%u53BB%uFF0C%u660E%u5929%u5145%u6EFF%u795E%u5947%u3002%22%3B%0Atip%5B10%5D%20%3D%20%22%u4F60%u8209%u4E16%u7121%u96D9%uFF0C%u7121%u4EBA%u53EF%u4EE5%u66FF%u4EE3%u3002%22%3B%0Atip%5B11%5D%20%3D%20%22%u5805%u6301%u4E0D%u61C8%uFF0C%u96E3%u4E5F%u8B8A%u6613%u3002%22%3B%0Atip%5B12%5D%20%3D%20%22%u6709%u751F%u547D%u5FC5%u6709%u5E0C%u671B%u3002%22%3B%0Atip%5B13%5D%20%3D%20%22%u77E5%u8DB3%u662F%u4EBA%u751F%u5728%u4E16%u6700%u5927%u7684%u5E78%u4E8B%u3002%22%3B%0Atip%5B14%5D%20%3D%20%22%u5FC3%u61F7%u5049%u5927%u7684%u7406%u60F3%uFF0C%u4F60%u5C07%u6703%u8B8A%u5F97%u5049%u5927%u3002%22%3B%0Atip%5B15%5D%20%3D%20%22%u4E0D%u8981%u653E%u68C4%uFF0C%u4E0D%u8981%u8A00%u6557%uFF01%22%3B%0Atip%5B16%5D%20%3D%20%22%u667A%u6167%u4F86%u81EA%u7D93%u9A57%u3002%22%3B%0Atip%5B17%5D%20%3D%20%22%u81EA%u5DF1%u6700%u4E86%u89E3%u81EA%u5DF1%u3002%22%3B%0Atip%5B18%5D%20%3D%20%22%u4EBA%uFF0C%u9577%u5F97%u6F02%u4EAE%u4E0D%u5982%u6D3B%u7684%u6F02%u4EAE%u3002%22%3B%0Atip%5B19%5D%20%3D%20%22%u4EBA%u751F%u5982%u679C%u932F%u4E86%u65B9%u5411%uFF0C%u505C%u6B62%u5C31%u662F%u9032%u6B65%u3002%22%3B%0Atip%5B20%5D%20%3D%20%22%u6BCF%u4E00%u7A2E%u5275%u50B7%uFF0C%u90FD%u662F%u4E00%u7A2E%u6210%u719F%u3002%22%3B%0Atip%5B21%5D%20%3D%20%22%u4EBA%u751F%uFF0C%u8AAA%u5230%u5E95%uFF0C%u6D3B%u7684%u662F%u5FC3%u60C5%u3002%22%3B%0Atip%5B22%5D%20%3D%20%22%u770B%u5225%u4EBA%u4E0D%u9806%u773C%uFF0C%u662F%u81EA%u5DF1%u4FEE%u990A%u4E0D%u5920%u3002%22%3B%0Atip%5B23%5D%20%3D%20%22%u6210%u529F%u6C38%u9060%u5C6C%u4E8E%u99AC%u4E0A%u884C%u52D5%u7684%u4EBA%u3002%22%3B%0Atip%5B24%5D%20%3D%20%22%u751F%u6C23%u662F%u62FF%u5225%u4EBA%u7684%u932F%u8AA4%u61F2%u7F70%u81EA%u5DF1%u3002%22%3B%0A%0Aindex%20%3D%20Math.floor%28Math.random%28%29%20*%20tip.length%29%3B%0Adocument.write%28%22%3Ctitle%3E%22%20+%20tip%5Bindex%5D%20+%20%22%3C/title%3E%22%29%3B//%u4FEE%u6539%u5B57%u578B%u53CA%u984F%u8272%0A//%20--%3E%0A%3C/script%3E%0A%3C%21-------JavaScript%u96A8%u6A5F%u986F%u793A%u6587%u5B57%20END--------%3E%0A%09%09%3Cmeta%20charset%3D%22utf-8%22%20/%3E%0A%09%09%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%2C%20user-scalable%3Dno%22%20/%3E%0A%09%09%3Clink%20rel%3D%22stylesheet%22%20href%3D%22assets/css/main.css%22%20/%3E%0A%09%09%3Cnoscript%3E%3Clink%20rel%3D%22stylesheet%22%20href%3D%22assets/css/noscript.css%22%20/%3E%3C/noscript%3E%0A%09%3C/head%3E%0A%09%3Cbody%20class%3D%22is-preload%22%3E%0A%0A%09%09%3C%21--%20Wrapper%20--%3E%0A%09%09%09%3Cdiv%20id%3D%22wrapper%22%3E%0A%0A%09%09%09%09%3C%21--%20Main%20--%3E%0A%09%09%09%09%09%3Csection%20id%3D%22main%22%3E%0A%09%09%09%09%09%09%3Cheader%3E%0A%09%09%09%09%09%09%09%3Cspan%20class%3D%22avatar%22%3E%3Cimg%20src%3D%22images/avatar.jpg%22%20alt%3D%22%22%20/%3E%3C/span%3E%0A%09%09%09%09%09%09%09%3Ch1%3EPoniy0_o%3C/h1%3E%0A%3C%21-------JavaScript%u96A8%u6A5F%u986F%u793A%u6587%u5B57%20START--------%3E%0A%3Cscript%20language%3D%22JavaScript%22%3E%0A%3C%21--%0A%0Atips%20%3D%20new%20Array%2813%29%3B%20//%u8A2D%u5B9A%u96A8%u6A5F%u986F%u793A%u6587%u5B57%u6578%0Atips%5B0%5D%20%3D%20%22%u72FC%u82E5%u56DE%u982D%20%u5FC5%u6709%u7DE3%u7531%20%u4E0D%u662F%u5831%u6069%20%u5C31%u662F%u5831%u4EC7%22%3B%0Atips%5B1%5D%20%3D%20%22%u6211%u760B%u8D77%u4F86%uFF0C%u9023%u6211%u81EA%u5DF1%u90FD%u6703%u6015%u3002%22%3B%0Atips%5B2%5D%20%3D%20%22%u6709%u8F38%u904E%uFF0C%u6C92%u6015%u904E%uFF01%u8D0F%u8981%u4E00%u8D77%u72C2%uFF0C%u8F38%u8981%u4E00%u8D77%u625B%uFF01%22%3B%0Atips%5B3%5D%20%3D%20%22%u91D1%u7528%u706B%u8A66%uFF0C%u4EBA%u7528%u9322%u8A66%u3002%22%3B%0Atips%5B4%5D%20%3D%20%22%u5144%u5F1F%u4E0D%u554F%u5C0D%u932F%uFF0C%u53EA%u554F%u633A%u4E0D%u633A%uFF01%22%3B%0Atips%5B5%5D%20%3D%20%22%u793E%u6703%u5728%u8D70%uFF0C%u57FA%u672C%u884C%u60C5%u8981%u6709%u3002%22%3B%0Atips%5B6%5D%20%3D%20%22%u5144%u5F1F%u4E0D%u770B%u5229%u76CA%uFF0C%u53EA%u8B1B%u7FA9%u6C23%u3002%22%3B%0Atips%5B7%5D%20%3D%20%22%u6C5F%u6E56%u771F%u662F%u4E00%u689D%u4E0D%u6B78%u8DEF%u3002but%uFF0C%u8B93%u6211%u518D%u9078%u4E00%u6B21%uFF0C%u6211%u4E00%u6A23%u8981%u505A%u5144%u5F1F%u3002%22%3B%0Atips%5B8%5D%20%3D%20%22%u6C92%u6709%u5F88%u53EF%u4EE5%uFF0C%u4F46%u4F60%u60F9%u4E0D%u8D77%uFF01%22%3B%0Atips%5B9%5D%20%3D%20%22%u4EBA%u53EF%u4EE5%u4E0D%u8B58%u5B57%uFF0C%u4F46%u4E0D%u53EF%u4EE5%u4E0D%u8A8D%u4EBA%u3002%22%3B%0Atips%5B10%5D%20%3D%20%22%u4EBA%u4E0D%u72AF%u6211%uFF0C%u6211%u4E0D%u72AF%u4EBA%uFF0C%u5C31%u662F%u6211%u7684%u539F%u5247%u3002%22%3B%0Atips%5B11%5D%20%3D%20%22%u6642%u9593%u518D%u8D70%uFF0C%u4EBA%u5FC3%u5728%u8B8A%u3002%22%3B%0Atips%5B12%5D%20%3D%20%22%u5144%u5F1F%u6709%u56F0%u96E3%uFF0C%u4E8C%u8A71%u4E0D%u8AAA%uFF0C%u5169%u808B%u63D2%u5200%u3002%22%3B%0Atips%5B13%5D%20%3D%20%22%u83AB%u5FD8%u521D%u8877%u3002%22%3B%0Atips%5B14%5D%20%3D%20%22%u6B20%u6211%u9322%u6211%u53EF%u4EE5%u7B11%u7B11%u7684%uFF0C%u4F46%u80CC%u53DB%u6211%u5C31%u4E03%u5929%u56DE%u5BB6%uFF01%22%3B%0Atips%5B15%5D%20%3D%20%22%u6C92%u770B%u904E%u6176%u8A18%u4E5F%u8981%u770B%u904E%u8C6C%u8D70%u8DEF%22%3B%0Atips%5B16%5D%20%3D%20%22%u6211%u9019%u4E00%u751F%u5C31%u662F%u5DE5%u5177%u4EBA%u7684%u547D%22%3B%0Atips%5B17%5D%20%3D%20%22%u6797%u5317%u81FA%u4E2D%u91D1%u57CE%u6B66%22%3B%0Atips%5B18%5D%20%3D%20%22%u70BA%u4E86%u4FDD%u8B77%u5FC3%u611B%u7684%u5973%u4EBA%uFF0C%u6211%u6703%u958B%u69CD%22%3B%0Atips%5B19%5D%20%3D%20%22%u56E0%u70BA%u6211%u662F%u4E00%u500B%u611B%u60C5%u9A19%u5B50%22%3B%0Atips%5B20%5D%20%3D%20%22%u9577%u5F97%u5E25%u4E26%u4E0D%u662F%u6211%u7684%u554F%u984C%uFF0C%u4F46%u7E3D%u662F%u70BA%u6211%u5E36%u4F86%u56F0%u64FE%22%3B%0Atips%5B21%5D%20%3D%20%22%u662F%u5144%u5F1F%u7684%u558A%u4E00%u8072%22%3B%0Atips%5B22%5D%20%3D%20%22%u7576%u6211%u5011%u62FF%u8D77%u5200%u5C31%u662F%u5728%u634D%u885B%u5144%u5F1F%22%3B%0Atips%5B23%5D%20%3D%20%22%u4ECA%u65E5%u4F60%u50B7%u6211%u4E00%u6BEB%uFF0C%u660E%u65E5%u6211%u5C60%u4F60%u6EFF%u9580%22%3B%0Atips%5B24%5D%20%3D%20%22%u56E0%u7FA9%u800C%u805A%uFF0C%u56E0%u76CA%u800C%u6563%20%u5408%u5247%u805A%uFF0C%u4E0D%u5408%u5247%u6563%uFF0C%u65E5%u4E45%u898B%u4EBA%u5FC3%22%3B%0Atips%5B25%5D%20%3D%20%22%u7159%u53EF%u4EE5%u78B0%20%u9152%u53EF%u4EE5%u559D%20%u5973%u4EBA%u53EF%u4EE5%u73A9%20%u4F46%u5C31%u662F%u6BD2%u4E0D%u80FD%u5438%22%3B%0Atips%5B25%5D%20%3D%20%22%u6211%u8AB0%uFF01%uFF01%uFF01%22%3B%0A%0Aindex%20%3D%20Math.floor%28Math.random%28%29%20*%20tips.length%29%3B%0Adocument.write%28%22%3CCENTER%3E%3CP%3E%3CFONT%20SIZE%3D2%20COLOR%3DBLACK%3E%22%20+%20tips%5Bindex%5D%20+%20%22%3C/CENTER%3E%3C/FONT%3E%3C/P%3E%22%29%3B//%u4FEE%u6539%u5B57%u578B%u53CA%u984F%u8272%0A//%20--%3E%0A%3C/script%3E%0A%3C%21-------JavaScript%u96A8%u6A5F%u986F%u793A%u6587%u5B57%20END--------%3E%0A%09%09%09%09%09%09%3C/header%3E%0A%09%09%09%09%09%09%3Cbutton%20onclick%3D%22location.href%3D%27https%3A//www.facebook.com/PowerAmmm%27%22%3E%3Ci%20class%3D%22fab%20fa-facebook-f%22%3E%3C/i%3E%3C/a%3E%3C/button%3E%0A%09%09%09%09%09%09%3Cbutton%20onclick%3D%22location.href%3D%27https%3A//www.instagram.com/poniy0_o/%27%22%3E%3Ci%20class%3D%22fab%20fa-instagram%22%3E%3C/i%3E%3C/button%3E%0A%09%09%09%09%09%09%3Cbutton%20onclick%3D%22location.href%3D%27https%3A//github.com/PowerAm%27%22%3E%3Ci%20class%3D%22fab%20fa-github%22%3E%3C/i%3E%3C/button%3E%0A%09%09%09%09%09%09%0A%09%09%09%09%09%3C/section%3E%0A%0A%09%09%09%09%3C%21--%20Footer%20--%3E%0A%09%09%09%09%09%3Cfooter%20id%3D%22footer%22%3E%0A%09%09%09%09%09%09%3Cul%20class%3D%22copyright%22%3E%0A%09%09%09%09%09%09%09%3C%21--%3Cli%3E%26copy%3B%20Jane%20Doe%3C/li%3E%3Cli%3EDesign%3A%20%3Ca%20href%3D%22http%3A//html5up.net%22%3EHTML5%20UP%3C/a%3E%3C/li%3E--%3E%0A%09%09%09%09%09%09%3C/ul%3E%0A%09%09%09%09%09%3C/footer%3E%0A%0A%09%09%09%3C/div%3E%0A%0A%09%09%3C%21--%20Scripts%20--%3E%0A%09%09%09%3Cscript%3E%0A%09%09%09%09if%20%28%27addEventListener%27%20in%20window%29%20%7B%0A%09%09%09%09%09window.addEventListener%28%27load%27%2C%20function%28%29%20%7B%20document.body.className%20%3D%20document.body.className.replace%28/%5Cbis-preload%5Cb/%2C%20%27%27%29%3B%20%7D%29%3B%0A%09%09%09%09%09document.body.className%20+%3D%20%28navigator.userAgent.match%28/%28MSIE%7Crv%3A11%5C.0%29/%29%20%3F%20%27%20is-ie%27%20%3A%20%27%27%29%3B%0A%09%09%09%09%7D%0A%09%09%09%3C/script%3E%0A%0A%09%3C/body%3E%0A%3C/html%3E"
-function SetNewWords()
-{
-var NewWords;
-NewWords = unescape(Words);
-document.write(NewWords);
-} 
-SetNewWords();
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-</SCRIPT>
-</HEAD>
+<html>
+	<head>
+		<!-------JavaScript隨機顯示文字 START-------->
+<script language="JavaScript">
+<!--
 
+tip = new Array(29); //設定隨機顯示文字數
+tip[0] = "微笑，是最美的陽光。";
+tip[1] = "學會知而不言，因為言多必失。";
+tip[2] = "很多時候，寧願被誤解，也不願去解釋。";
+tip[3] = "歲月不長，對溫柔的人報以溫柔。";
+tip[4] = "人的生命不在於長短，在於是否痛快活過。";
+tip[5] = "永遠不要停止相信自己。";
+tip[6] = "要看清自己，不要看輕自己。";
+tip[7] = "平凡簡單，安於平凡，真不簡單。";
+tip[8] = "生命不止，奮鬥不息。";
+tip[9] = "充實今朝，昨日已成過去，明天充滿神奇。";
+tip[10] = "你舉世無雙，無人可以替代。";
+tip[11] = "堅持不懈，難也變易。";
+tip[12] = "有生命必有希望。";
+tip[13] = "知足是人生在世最大的幸事。";
+tip[14] = "心懷偉大的理想，你將會變得偉大。";
+tip[15] = "不要放棄，不要言敗！";
+tip[16] = "智慧來自經驗。";
+tip[17] = "自己最了解自己。";
+tip[18] = "人，長得漂亮不如活的漂亮。";
+tip[19] = "人生如果錯了方向，停止就是進步。";
+tip[20] = "每一種創傷，都是一種成熟。";
+tip[21] = "人生，說到底，活的是心情。";
+tip[22] = "看別人不順眼，是自己修養不夠。";
+tip[23] = "成功永遠屬于馬上行動的人。";
+tip[24] = "生氣是拿別人的錯誤懲罰自己。";
+tip[25] = "我在懷念，你不再懷念的。";
+tip[26] = "等待你的關心，等到我關上了心。";
+tip[27] = "沒關係，傷的次數多了，也就無所謂了。";
+tip[28] = "你絕情、我斷義、從此直線永平行！";
+tip[29] = "如果沒有回憶，或許我們就不會如此懷念。";
+
+
+index = Math.floor(Math.random() * tip.length);
+document.write("<title>" + tip[index] + "</title>");//修改標題
+// -->
+</script>
+<!-------JavaScript隨機顯示文字 END-------->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Poniy0_o</h1>
+
+<!-------JavaScript隨機顯示文字 START-------->
+<script language="JavaScript">
+<!--
+
+tips = new Array(25); //設定隨機顯示文字數
+tips[0] = "狼若回頭 必有緣由 不是報恩 就是報仇";
+tips[1] = "我瘋起來，連我自己都會怕。";
+tips[2] = "有輸過，沒怕過！贏要一起狂，輸要一起扛！";
+tips[3] = "金用火試，人用錢試。";
+tips[4] = "兄弟不問對錯，只問挺不挺！";
+tips[5] = "社會在走，基本行情要有。";
+tips[6] = "兄弟不看利益，只講義氣。";
+tips[7] = "江湖真是一條不歸路。but，讓我再選一次，我一樣要做兄弟。";
+tips[8] = "沒有很可以，但你惹不起！";
+tips[9] = "人可以不識字，但不可以不認人。";
+tips[10] = "人不犯我，我不犯人，就是我的原則。";
+tips[11] = "時間再走，人心在變。";
+tips[12] = "兄弟有困難，二話不說，兩肋插刀。";
+tips[13] = "莫忘初衷。";
+tips[14] = "欠我錢我可以笑笑的，但背叛我就七天回家！";
+tips[15] = "沒看過慶記也要看過豬走路";
+tips[16] = "我這一生就是工具人的命";
+tips[17] = "林北臺中金城武";
+tips[18] = "為了保護心愛的女人，我會開槍";
+tips[19] = "因為我是一個愛情騙子";
+tips[20] = "長得帥並不是我的問題，但總是為我帶來困擾";
+tips[21] = "是兄弟的喊一聲";
+tips[22] = "當我們拿起刀就是在捍衛兄弟";
+tips[23] = "今日你傷我一毫，明日我屠你滿門";
+tips[24] = "因義而聚，因益而散 合則聚，不合則散，日久見人心";
+tips[25] = "煙可以碰 酒可以喝 女人可以玩 但就是毒不能吸";
+tips[25] = "我誰！！！";
+
+index = Math.floor(Math.random() * tips.length);
+document.write("<CENTER><h5>" + tips[index] + "</CENTER></h5>");//修改字型及顏色
+// -->
+</script>
+<!-------JavaScript隨機顯示文字 END-------->
+						</header>
+						<button onclick="location.href='https://reurl.cc/QqmQb'"><i class="fab fa-facebook-f"></i></a></button>
+						<button onclick="location.href='https://www.instagram.com/poniy0_o/'"><i class="fab fa-instagram"></i></button>
+						<button onclick="location.href='https://github.com/PowerAm'"><i class="fab fa-github"></i></button>
+						<button onclick="location.href='#help.html'"><i class="fa fa-user"></i></button>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<!--<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+						</ul>
+					</footer>
+
+			</div>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>

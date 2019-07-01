@@ -109,7 +109,13 @@ document.write("<CENTER><h5>" + tips[index] + "</CENTER></h5>");//修改字型�
 							<button onclick="location.href='https://steamcommunity.com/id/PowerOWO/'"><i class="fab fa-steam"></i></button>
 							<button onclick="location.href='https://poweram.github.io/'"><i class="fa fa-user"></i></button>
 					</section>
-
+<script>
+var myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  var d = new Date();
+  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+}
+</script>
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">

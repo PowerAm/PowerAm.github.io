@@ -59,7 +59,6 @@ document.write("<title>" + tip[index] + "</title>");//修改標題
 			<div id="wrapper">
 		        
 				<!-- Main -->
-				<h6 id="time"></h6>
 					<section id="main">
 						<header>
 							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
@@ -104,19 +103,12 @@ document.write("<CENTER><h5>" + tips[index] + "</CENTER></h5>");//修改字型�
 </script>
 <!-------JavaScript隨機顯示文字 END-------->
 						</header>
-							<button onclick="location.href='https://reurl.cc/QqmQb'"><i class="fab fa-facebook-f"></i></a></button>
-							<button onclick="location.href='https://www.instagram.com/poniy0_o/'"><i class="fab fa-instagram"></i></button>
-							<button onclick="location.href='https://github.com/PowerAm'"><i class="fab fa-github"></i></button>
-							<button onclick="location.href='https://steamcommunity.com/id/PowerOWO/'"><i class="fab fa-steam"></i></button>
-							<button onclick="location.href='https://poweram.github.io/'"><i class="fa fa-user"></i></button>
+							<span><a href="https://reurl.cc/QqmQb" title="Facebook" target="_blank" rel="nofollow"><i class="fab fa-facebook-f"></i></a></span>
+							<span><a href="https://www.instagram.com/poniy0_o/" title="Instagram" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a></span>
+							<span><a href="https://github.com/PowerAm" title="Github" target="_blank" rel="nofollow"><i class="fab fa-github"></i></a></span>
+							<span><a href="https://steamcommunity.com/id/PowerOWO/" target="_blank" title="STEAM" rel="nofollow"><i class="fab fa-steam"></i></a></span>
+							<span style="margin-right:0;"><a href="https://poweram.github.io/" title="BACK" target="_blank" rel="nofollow"><i class="fa fa-user"></i></a></span>
 					</section>
-<script>
-var myVar = setInterval(myTimer ,1000);
-function myTimer() {
-  var d = new Date();
-  document.getElementById("time").innerHTML = d.toLocaleTimeString();
-}
-</script>
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">

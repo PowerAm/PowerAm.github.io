@@ -1,39 +1,37 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>WEB</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="arrets/css/main.css" />
-		<noscript><link rel="stylesheet" href="arrets/css/noscript.css" /></noscript>
-		<script src="//instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        /* 移除邊距，讓背景變成黑色 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* 防止出現滾動條 */
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<h1>POWER</h1>
-						<nav>
-							<ul>
-								<li><a href="https://www.instagram.com/poniy0_o/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.facebook.com/PowerAmmm" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/PowerAm" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://steamcommunity.com/id/PowerOWO/" class="icon brands fa-steam"><span class="label">Steam</span></a></li>
-								<li><a href="ig" class="icon solid fa-user"><span class="label">USER</span></a></li>
-							</ul>
-						</nav>
-					</header>
+        /* 影片填滿容器 */
+        video {
+            max-width: 100%;
+            max-height: 100vh;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+    <video controls autoplay name="media">
+        <source src="https://myvideo-a.s3.ap-northeast-3.amazonaws.com/%E5%96%9C%E6%AC%A2%E9%98%B4%E5%A4%A9__1lnyhk12bj0o9_%23%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B_%E8%B4%B4%E5%90%A7%E7%B3%BB%E5%88%97%E3%80%8A%E8%BF%99%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%8D%81%E5%B9%B4%EF%BC%8C%E4%B9%9F%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%9B%9B%E5%B9%B4%E3%80%8B+%E6%97%B6%E5%85%89%E6%B5%81%E8%BD%AC%EF%BC%8C%E6%84%BF%E4%BD%A0%E4%B8%8E%E7%8F%8D%E7%88%B1%E4%B9%8B%E4%BA%BA%E8%83%BD%E5%A4%9F.mp4" type="video/mp4">
+        您的瀏覽器不支援影片播放。
+    </video>
+
+</body>
 </html>

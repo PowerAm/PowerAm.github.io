@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
-    <style>
-        /* 移除邊距，讓背景變成黑色 */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            background-color: #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden; /* 防止出現滾動條 */
-        }
+    <title>點擊觀看：我的專屬影片</title>
 
-        /* 影片填滿容器 */
+    <meta property="og:site_name" content="影片分享平台">
+    <meta property="og:title" content="點擊觀看：我的專屬影片">
+    <meta property="og:description" content="這是我精心準備的影片，點擊進入全螢幕播放器觀看。">
+    <meta property="og:type" content="video.other">
+    <meta property="og:url" content="這裡請填寫你的_github_io_網址">
+    
+    <meta property="og:video" content="https://myvideo-a.s3.ap-northeast-3.amazonaws.com/%E5%96%9C%E6%AC%A2%E9%98%B4%E5%A4%A9__1lnyhk12bj0o9_%23%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B_%E8%B4%B4%E5%90%A7%E7%B3%BB%E5%88%97%E3%80%8A%E8%BF%99%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%8D%81%E5%B9%B4%EF%BC%8C%E4%B9%9F%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%9B%9B%E5%B9%B4%E3%80%8B+%E6%97%B6%E5%85%89%E6%B5%81%E8%BD%AC%EF%BC%8C%E6%84%BF%E4%BD%A0%E4%B8%8E%E7%8F%8D%E7%88%B1%E4%B9%8B%E4%BA%BA%E8%83%BD%E5%A4%9F.mp4">
+    <meta property="og:video:secure_url" content="https://myvideo-a.s3.ap-northeast-3.amazonaws.com/%E5%96%9C%E6%AC%A2%E9%98%B4%E5%A4%A9__1lnyhk12bj0o9_%23%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B_%E8%B4%B4%E5%90%A7%E7%B3%BB%E5%88%97%E3%80%8A%E8%BF%99%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%8D%81%E5%B9%B4%EF%BC%8C%E4%B9%9F%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%9B%9B%E5%B9%B4%E3%80%8B+%E6%97%B6%E5%85%89%E6%B5%81%E8%BD%AC%EF%BC%8C%E6%84%BF%E4%BD%A0%E4%B8%8E%E7%8F%8D%E7%88%B1%E4%B9%8B%E4%BA%BA%E8%83%BD%E5%A4%9F.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content="點擊觀看：我的專屬影片">
+    <meta name="twitter:player" content="這裡請填寫你的_github_io_網址">
+    <meta name="twitter:player:width" content="1280">
+    <meta name="twitter:player:height" content="720">
+
+    <style>
+        body, html {
+            margin: 0; padding: 0;
+            height: 100%; width: 100%;
+            background-color: #000;
+            display: flex; align-items: center; justify-content: center;
+            overflow: hidden;
+        }
         video {
             max-width: 100%;
             max-height: 100vh;
@@ -28,7 +40,7 @@
 </head>
 <body>
 
-    <video controls autoplay name="media">
+    <video controls autoplay>
         <source src="https://myvideo-a.s3.ap-northeast-3.amazonaws.com/%E5%96%9C%E6%AC%A2%E9%98%B4%E5%A4%A9__1lnyhk12bj0o9_%23%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B_%E8%B4%B4%E5%90%A7%E7%B3%BB%E5%88%97%E3%80%8A%E8%BF%99%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%8D%81%E5%B9%B4%EF%BC%8C%E4%B9%9F%E6%98%AF%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E5%9B%9B%E5%B9%B4%E3%80%8B+%E6%97%B6%E5%85%89%E6%B5%81%E8%BD%AC%EF%BC%8C%E6%84%BF%E4%BD%A0%E4%B8%8E%E7%8F%8D%E7%88%B1%E4%B9%8B%E4%BA%BA%E8%83%BD%E5%A4%9F.mp4" type="video/mp4">
         您的瀏覽器不支援影片播放。
     </video>
